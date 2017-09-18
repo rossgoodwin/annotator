@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>text annotation interface</title>
+<meta name="author" content="Ross Goodwin">
+<meta name="description" content="text annotation interface">
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<link rel="stylesheet" href="./css/skeleton.css" type="text/css">
+<link rel="stylesheet" href="./css/quill.core.css" type="text/css">
+<link rel="stylesheet" href="./css/index.css" type="text/css">
+</head>
+<body>
+
+<div class="container">
+
+  <button id="vis-file-upload">Upload .txt file</button>
+  <input type="file" id="file-upload">
+  <a id="downloadAnchorElem"></a>
+
+  <div class="row">
+
+    <div class="seven columns">
+      <div id="editor"></div>
+    </div>
+
+    <div class="five columns">
+      <div id="annotation-box">
+         <input type="text" id="tag-input" placeholder="tag" list="tags">
+         <datalist id="tags"></datalist>
+         <textarea id="annotation-input" placeholder="notes"></textarea>
+         <button id="annotation-button">Annotate</button> 
+         <button id="annotation-download">Download JSON</button>
+         <div id="annotation-stack"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/quill.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

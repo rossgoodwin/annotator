@@ -1,0 +1,59 @@
+body, #editor, textarea, input, button {
+	font-family: 'Lora', serif;
+}
+
+::selection {
+  background-color: rgb(197, 239, 247); /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background-color: rgb(197, 239, 247); /* Gecko Browsers */
+}
+
+#editor {
+	border: 1px solid #333;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+#editor:active {
+	outline: none;
+}
+
+#annotation-input, #tag-input {
+	width: 100%;
+}
+
+#annotation-input {
+	height: 200px;
+}
+
+#annotation-box, #annotation-stack {
+	position: fixed;
+	width: 25%;
+}
+
+#annotation-stack p {
+	background-color: #EEE;
+	border-radius: 3px;
+	padding: 5px;
+	margin-top: 16px;
+}
+
+#file-upload, #downloadAnchorElem {
+	display: none;
+}
+
+span.tag-pill {
+	/*border: 1px solid #333;*/
+	background-color: #333;
+	color: #FFF;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 0 5px;
+	font-weight: bold;
+}
+
+button {
+	width: 200px;
+}
