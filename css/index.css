@@ -1,5 +1,6 @@
 body, #editor, textarea, input, button {
 	font-family: 'Lora', serif;
+	background-color: #FFF;
 }
 
 ::selection {
@@ -34,7 +35,7 @@ body, #editor, textarea, input, button {
 }
 
 #annotation-stack p {
-	background-color: #EEE;
+	background-color: #FFF;
 	border-radius: 3px;
 	padding: 5px;
 	margin-top: 16px;
@@ -56,4 +57,9 @@ span.tag-pill {
 
 button {
 	width: 200px;
+	/*background-color: #FFF;*/
+}
+
+body {
+	background-color: #EEE;
 }
